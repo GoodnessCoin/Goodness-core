@@ -12,16 +12,16 @@ Libraries needed : boost >=1.58
 If you want to compile the latest stable release, currently in production, clone the master branch :
 
 ```html
-$ git clone https://github.com/GoodnessCoin/The-Goodness-Project.git
+git clone https://github.com/GoodnessCoin/The-Goodness-Project.git
 ```
 
 Compilation informations :
 
 ```html
-$ git clone -b master https://github.com/iridiumdev/iridium.git
-$ cd iridium
-$ mkdir iridium-build
-$ cd iridium-build
+$ git clone -b master https://github.com/GoodnessCoin/The-Goodness-Project.git
+$ cd goodness
+$ mkdir build
+$ cd build
 $ cmake -D STATIC=ON -D CMAKE_BUILD_TYPE=RELEASE ..
 $ PORTABLE=1 make
 ```
