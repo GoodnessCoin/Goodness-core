@@ -78,9 +78,9 @@ const size_t   FUSION_TX_MIN_IN_OUT_COUNT_RATIO              = 4;
 const uint32_t KEY_IMAGE_CHECKING_BLOCK_INDEX                = 8560;
 const uint32_t IRIDIUM_REWARD_ADJUSTMENT_BLOCK               = 8560;
 
-const uint32_t UPGRADE_HEIGHT_V2                             = 69500;
-const uint32_t UPGRADE_HEIGHT_V3                             = 95250;
-const uint32_t UPGRADE_HEIGHT_V4                             = 115200;
+const uint32_t UPGRADE_HEIGHT_V2                             = 100000;
+const uint32_t UPGRADE_HEIGHT_V3                             = 200000;
+const uint32_t UPGRADE_HEIGHT_V4                             = 300000;
 const uint32_t UPGRADE_HEIGHT_V5                             = 332500;
 const unsigned UPGRADE_VOTING_THRESHOLD                      = 90;               // percent
 const uint32_t UPGRADE_VOTING_WINDOW                         = EXPECTED_NUMBER_OF_BLOCKS_PER_DAY;  // blocks
@@ -146,7 +146,7 @@ const uint32_t DB_DEFAULT_MAX_OPEN_FILES                     = 500;           //
 const uint16_t DB_DEFAULT_BACKGROUND_THREADS_COUNT           = 10;            // 10 threads
 
 const char* const SEED_NODES[] = {
-    "172.31.24.59:25069",
+    "dyngepeng.zapto.org:25069",
   "18.223.168.81:25069",
   "172.31.10.196:25069",
   "18.191.154.140:25069",
