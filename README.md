@@ -19,7 +19,7 @@ Compilation informations :
 
 ```html
 $ git clone -b master https://github.com/GoodnessCoin/The-Goodness-Project.git
-$ cd goodness
+$ cd The-Goodness-Project
 $ mkdir build
 $ cd build
 $ cmake -D STATIC=ON -D CMAKE_BUILD_TYPE=RELEASE ..
