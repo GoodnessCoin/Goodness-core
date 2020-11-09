@@ -32,6 +32,7 @@ void invokeJsonRpcCommand(HttpClient& httpClient, JsonRpcRequest& jsReq, JsonRpc
   HttpResponse httpRes;
 
   httpReq.setUrl("/json_rpc");
+  httpReq.addHeader("Access-Control-Allow-Origin", "*");
   httpReq.addHeader("Content-Type", "application/json");
   httpReq.setBody(jsReq.getBody());
 

@@ -50,6 +50,7 @@ void invokeJsonCommand(HttpClient& client, const std::string& url, const Request
   HttpResponse hres;
 
   hreq.setUrl(url);
+  hreq.addHeader("Access-Control-Allow-Origin", "*");
   hreq.addHeader("Content-Type", "application/json");
   hreq.setBody(storeToJson(req));
   client.request(hreq, hres);
