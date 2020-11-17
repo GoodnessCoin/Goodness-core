@@ -87,6 +87,7 @@ RpcServer::HandlerFunction jsonMethod(bool (RpcServer::*handler)(typename Comman
     }
 
     bool result = (obj->*handler)(req, res);
+    response.addHeader("Access-Control-Allow-Origin", "*");
     response.addHeader("Content-Type", "application/json");
     response.setBody(storeToJson(res.data()));
     return result;
@@ -155,6 +156,7 @@ bool RpcServer::processJsonRpcRequest(const HttpRequest& request, HttpResponse& 
 
   using namespace JsonRpc;
 
+  response.addHeader("Access-Control-Allow-Origin", "*");
   response.addHeader("Content-Type", "application/json");
 
   JsonRpcRequest jsonRequest;
